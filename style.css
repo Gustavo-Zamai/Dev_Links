@@ -39,7 +39,8 @@ body {
   /*background: color image repeat position/size 
   SHORT HAND
   */
-  background: var(--bg-mobile) no-repeat top center/cover; 
+  background: var(--bg-mobile) no-repeat top center/cover;
+  height: 100vh; 
 
 }
 
@@ -163,4 +164,15 @@ footer {
 
 footer a {
   text-decoration: none;
+}
+
+/* media queries */
+
+@media (min-width: 700px){
+  :root {
+    --bg-mobile: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-mobile: url(./assets/bg-desktop-light.jpg);
+  }
 }
